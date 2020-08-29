@@ -1,0 +1,84 @@
+
+
+.colheight1
+{
+	height:680px;
+	background-color:#17202A;
+	position:fixed;
+	z-index:1;
+}
+
+.colheight2
+{
+	height:680px;
+	background-color:lightgray;
+	width:100%;
+}
+
+
+
+.navbar div{
+	width:100%;
+	height:50px;
+	background:transparent;
+}
+
+.navbar div a{
+	margin-top:35px;
+	
+	text-decoration:none;
+	color:#4D5656;
+}
+
+.navbar div:hover{
+	width:100%;
+	height:50px;
+	background:#1B2631;
+}
+
+
+.navbar div a:hover{
+	color:white;
+}
+
+.headerlogo{
+	background-color:#17202A;
+	height:70px;
+	width:100%;
+}
+
+.headerdete
+{
+	
+	background-color:#85C1E9;
+	height:70px;
+	width:100%;
+}
+
+.ProfileContent{
+	margin-top:100px;
+	margin-left:100px;
+}
+
+.ProfileContent label{
+		font-size:25px;
+}
+
+.myform{
+	margin-top:100px;
+	margin-left:200px;
+}
+
+.formfeed textarea
+{
+	height:300px;
+	width:480px;
+	border-radius:10px;
+}
+
+.formfeed input[type="text"],input[type="submit"]
+{
+	height:40px;
+	width:480px;
+	border-radius:5px;
+}

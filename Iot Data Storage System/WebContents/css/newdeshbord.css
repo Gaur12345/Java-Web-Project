@@ -1,0 +1,99 @@
+.mainheader
+{
+	height: 100px;
+	background-color:#20B2AA;
+}
+.h1
+{
+	text-align:center;
+	color:white;
+	margin-top:23px;	
+}
+
+.reg{
+	width:200px;
+	height:25px;
+	margin-top:30px;
+	margin-left:200px;
+}
+
+.welcome
+{
+	margin-top:20px;
+	text-align:center;
+	color:yellow;
+}
+
+
+.Myheaderleft
+{
+	height:70px;
+	background-color:#17202A;
+}
+.MyheaderRight
+{
+	height:70px;
+	background-color:#85C1E9;;
+}
+
+.navBac
+{
+	background-color:#17202A;
+	height:680px;
+}
+.navbar div{
+	width:100%;
+	height:50px;
+	background:transparent;
+}
+
+.navbar div a{
+	margin-top:35px;
+	
+	text-decoration:none;
+	color:#4D5656;
+}
+
+.navbar div:hover{
+	width:100%;
+	height:50px;
+	background:#1B2631;
+}
+
+.navbar div a:hover{
+	color:white;
+}
+
+.mainBody
+{
+	background-color:lightgray;
+}
+
+.ProfileContent
+{
+	margin-top:100px;
+	margin-left:100px;
+}
+
+.ProfileContent label{
+		font-size:30px;
+}
+
+.myform{
+	margin-top:100px;
+	margin-left:200px;
+}
+
+.formfeed textarea
+{
+	height:300px;
+	width:480px;
+	border-radius:10px;
+}
+
+.formfeed input[type="text"],input[type="submit"]
+{
+	height:40px;
+	width:480px;
+	border-radius:5px;
+}
