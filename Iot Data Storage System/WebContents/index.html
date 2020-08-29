@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="cssIOT/login.css" rel="stylesheet">
+<link  rel="icon" href="image/title2.jpg" />
+<title>IOT</title>
+<style>
+::placeholder {
+  color: #454545;
+  opacity: 1; /* Firefox */
+}
+</style>
+</head>
+<body>
+<div class="login-box">
+<img src="image/avatar.png" class="avatar">
+<h1>Login Here</h1>
+<form action="LoginServlet" method="post" id="form1" onsubmit="validateCatcha()">
+<p>Email</p>
+<input type="email" name="cemail" placeholder="Enter Useremail" required autocomplete="on" />
+<p>Password</p>
+<input type="password" name="cpassword" placeholder="Enter your password" required />
+
+
+<!--  <img src="Captcha.php" height="100px" width="250px" />-->
+<h1 id="capch" style="color:lightgray;background-color:white"></h1>
+<input type="text"  id="captcha" onblur="validateCatcha()" placeholder="Enter number Captcha code" autocomplete="off" required />
+<h4 id="h1"></h4>
+
+
+<br><input type="submit" name="submit" onclick="return formckeck()" value="login"><br/>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="Registration.jsp" >Registration</a>    &nbsp; &nbsp; &nbsp; &nbsp;<a href="ForgotPassword.jsp">Forgot password</a>
+</form>
+</div>
+
+<script src="cssIOT/jquery.js"></script>
+<script>
+		var num=0;
+		var count=0;
+	
+		$(document).ready(function(){
+			num=Math.floor((Math.random() * 100000) + 1);
+			$("#capch").html(num);
+		});
+		
+		
+		function validateCatcha()
+		{
+			$(document).ready(function(){
+				var val=$("#captcha").val();
+				if(num==val)
+				{	
+					$("#h1").html("Captcha success");
+					$("#h1").css("color","green");
+					count=0;
+				}
+				else
+				{
+					$("#h1").html("Incorrect Captcha");
+					$("#h1").css("color","red");
+					count=1;
+					return false;
+				}
+			});
+		}
+	
+		function formckeck()
+		{
+			if(count==1)
+			{
+				$("#h1").html("Incorrect Captcha");
+				$("#h1").css("color","red");
+				return false;
+			}	
+		}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
